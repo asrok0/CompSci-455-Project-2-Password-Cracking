@@ -33,10 +33,10 @@ public class RainbowTable {
                 writer.write(password + "," + hash + "");
             }
 
-            System.out.println("Rainbow table exported to " + filename);
+            System.out.println("Rainbow table exported to " + filename + "\n");
         }
         catch (IOException e) {
-            System.out.println("Error writing CSV file.");
+            System.out.println("Error writing CSV file.\n");
             e.printStackTrace();
         }
     }

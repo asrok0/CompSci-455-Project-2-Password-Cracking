@@ -55,7 +55,7 @@ public class Main {
             System.out.println("No password found for Target 2!");
         }
 
-        System.out.println("\n\nPasswords Tested: " + totalPasswords);
+        System.out.println("\nPasswords Tested: " + totalPasswords);
         System.out.println("Runtime: " + (endTime - startTime) + "ms");
     }
 }
