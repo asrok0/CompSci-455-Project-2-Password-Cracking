@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// TODO: PasswordGenerator methods
+
 // Generates possible passwords using the info from the social engineering
 public class PasswordGenerator {
 

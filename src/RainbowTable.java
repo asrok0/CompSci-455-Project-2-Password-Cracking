@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+// TODO: RainbowTable methods
+
 // Stores password and hash mappings, can be seen as a simplified rainbow table
 public class RainbowTable {
 
