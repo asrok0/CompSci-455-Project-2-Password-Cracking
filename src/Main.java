@@ -41,7 +41,19 @@ public class Main {
         System.out.println("RESULTS");
         System.out.println("--------------------");
 
-        //TODO: Add printing for cracked results
+        if (target1Cracked != null) {
+            System.out.println("Password found for Target 1: " + target1Cracked);
+        }
+        else {
+            System.out.println("No password found for Target 1!");
+        }
+
+        if (target2Cracked != null) {
+            System.out.println("Password found for Target 2: " + target2Cracked);
+        }
+        else {
+            System.out.println("No password found for Target 2!");
+        }
 
         System.out.println("\n\nPasswords Tested: " + totalPasswords);
         System.out.println("Runtime: " + (endTime - startTime) + "ms");
