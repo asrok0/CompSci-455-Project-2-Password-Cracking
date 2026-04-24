@@ -1,4 +1,5 @@
 import java.util.List;
+import java.security.MessageDigest;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,17 +43,25 @@ public class Main {
         System.out.println("--------------------");
 
         if (target1Cracked != null) {
+            String generatedHash = MD5Util.md5(target1Cracked);
+
             System.out.println("Password found for Target 1: " + target1Cracked);
+            System.out.println("Known hash: " + target1Hash);
+            System.out.println("Generated has: " + generatedHash + "\n");
         }
         else {
-            System.out.println("No password found for Target 1!");
+            System.out.println("No password found for Target 1!\n");
         }
 
         if (target2Cracked != null) {
+            String generatedHash = MD5Util.md5(target2Cracked);
+
             System.out.println("Password found for Target 2: " + target2Cracked);
+            System.out.println("Known hash: " + target2Hash);
+            System.out.println("Generated hash: " + generatedHash + "\n");
         }
         else {
-            System.out.println("No password found for Target 2!");
+            System.out.println("No password found for Target 2!\n");
         }
 
         System.out.println("\nPasswords Tested: " + totalPasswords);
