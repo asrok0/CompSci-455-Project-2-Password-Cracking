@@ -25,12 +25,12 @@ public class RainbowTable {
     // Puts the rainbow table created in a CSV
     public void exportCSV(String filename) {
         try (FileWriter writer = new FileWriter(filename)) {
-            writer.write("Password, Hash");
+            writer.write("Password, Hash\n");
 
             for (Map.Entry<String, String> entry : table.entrySet()) {
                 String hash = entry.getKey();
                 String password = entry.getValue();
-                writer.write(password + "," + hash + "");
+                writer.write(password + "," + hash + "\n");
             }
 
             System.out.println("Rainbow table exported to " + filename + "\n");
