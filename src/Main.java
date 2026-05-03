@@ -47,7 +47,7 @@ public class Main {
 
             System.out.println("Password found for Target 1: " + target1Cracked);
             System.out.println("Known hash: " + target1Hash);
-            System.out.println("Generated has: " + generatedHash + "\n");
+            System.out.println("Generated hash: " + generatedHash + "\n");
         }
         else {
             System.out.println("No password found for Target 1!\n");
